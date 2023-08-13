@@ -1,0 +1,290 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    margin: -7px;
+     background-color: #eac926;
+}
+main{
+    margin: -7px;
+    background-color: #ebebeb;
+    padding-bottom: 25px;
+}
+ul{
+    list-style-type: none;
+    
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+a{
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+label{
+    display: block;
+    color: #666;
+}
+h2{
+    position: relative;
+    left: 10%;
+}
+#boton{
+    padding: 15px;
+    margin: 5px;
+    width: 100%;
+    color: white;
+    background-color: #1259c3;
+    border: solid #ebebeb 1px;
+    border-radius: 5px;
+    transition: 1s;
+}
+#boton:hover {
+    background-color: #0022AA;
+}
+#botonD{
+    padding: 15px;
+    margin: 5px;
+    width: 100%;
+    color: white;
+    background-color: #CB3234;
+    border: solid #ebebeb 1px;
+    border-radius: 5px;
+    transition: 1s;
+}
+#botonD:hover {
+    background-color: #ff0000;
+}
+#foto{
+    border: solid #ebebeb 1px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 30%;
+    background-color: white;
+}
+#nombre{
+    border: solid #ebebeb 1px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 105%;
+}
+#contraseña{
+    border: solid #ebebeb 1px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 105%;
+}
+#mail{
+    border: solid #ebebeb 1px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 40%;
+}
+#domicilio{
+    border: solid #ebebeb 1px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 40%;
+}
+#fecha{
+    border: solid #ebebeb 1px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 25%;
+}
+.grupo1{
+    display: flex;
+    justify-content: center;
+}
+.grupo2{
+    display: flex;
+    justify-content: center;
+}
+.grupo3{
+    display: flex;
+    justify-content: center;
+}
+.detalleboton{
+    margin: 20px;
+}
+.check{
+    margin: 10px;
+}
+.formulario{
+    margin: 30px;
+}
+.detallesperfil{
+    display: flex;
+    justify-content: center;
+}
+.opciones{
+    margin: 1%;
+}
+.color{
+    background-color: #ebebeb;
+}
+.elfooter{
+    display: flex;
+    justify-content:space-around;
+}
+.formulariobuscador{
+    position: relative;
+    top: 30px;
+}
+#buscador {
+    width: 30vw;
+    color: #666;
+    background-color: white;
+    border: solid #666 1px;
+    border-radius: 7px;
+    padding: 10px;
+}
+.cuerpos_tarjeta {
+    font-size: 12px;
+    text-align: center;
+}
+.titulos_tarjeta{
+    text-align: center;
+}
+.burger-menu {
+    border-radius: 5px;
+    width: 30px;
+    line-height: 30px;
+    padding: 5px;
+    text-align: center;
+    background-color: #1259c3;;
+    color: white;
+}
+.dibujos_tarjeta{
+    text-align: center;
+    color: #1259c3;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+.elfooter:hover{
+    .dibujos_tarjeta {
+    color: #4a53c5;
+}
+}
+
+@media (max-width: 481px){
+    ul{
+        display: none;
+    }
+    #contraseña{
+        width: 50%;
+    }
+    #nombre{
+        width: 50%;
+    }
+    #mail{
+        width: 65%;
+    }
+    #domicilio{
+        width: 60%;
+    }
+    .elfooter{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .compra {
+        position: relative;
+        left: 20%;
+    }
+    .burger-menu{
+        position: relative;
+        bottom: 10px;
+    }
+    .imglogo{
+        width: 42%;
+    }
+    .logo{  
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lupa{
+        position: relative;
+        right: 14%;
+    }
+    .grupo1{
+        display: block;
+    }
+    .grupo2{
+        display: block;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 768px){
+    .elfooter{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ul_nav{
+        display: flex;
+        gap: 0.5em;
+    }
+    .ul_completa{
+        display: flex;
+        justify-content: space-around;
+    }
+    .burger-menu{
+        visibility:hidden;
+    }
+    .imglogo{
+        width: 31%;
+        justify-content: space-around;
+    }
+    .buscador{
+        width: 31%;
+        margin: 20px;
+    }
+    .logo{  
+        display: flex;
+    }
+    .lupa{
+        position: relative;
+        right: 11%;
+    }
+    .compra{
+        width: 31%;
+    }
+}
+
+@media (min-width: 769px){
+    .ul_nav{
+        display: flex;
+        gap: 1.5em;
+    }
+    .ul_completa{
+        display: flex;
+        justify-content: space-between;
+    }
+    .burger-menu{
+        visibility:hidden;
+    }
+    .imglogo{
+        width: 31%;
+        justify-content: space-around;
+    }
+    .buscador{
+        width: 30%;
+        margin: 40px;
+    }
+    .logo{  
+        display: flex;
+    }
+    .lupa{
+        position: relative;
+        right: 10%;
+    }
+    .compra{
+        width: 31%;
+    }
+}
