@@ -3,6 +3,7 @@ const path = require('path')
 
 const app = express()
 
+const port = process.env.PORT || 3001;
 
 app.use(express.static(path.join(__dirname,"public")))
 
@@ -18,6 +19,4 @@ app.get ("/login" ,(req, res)=>{
     res.sendFile(__dirname + '/views/login.html')
 })
 
-app.listen(4321 , () =>{
-    console.log('vamos alla');
-})
+app.listen(port , () => console.log('Servidor corriendo en el puerto ${port}'))
